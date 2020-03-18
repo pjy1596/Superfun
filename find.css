@@ -1,0 +1,50 @@
+.find {
+  margin-top: 50px;
+}
+.find__header-list {
+  display: flex;
+  justify-content: space-around;
+  /* padding: 0px 20px; */
+  /* 잘 보면 알겠지만 이 박스안에 따로 또 패딩이 있다 
+  패딩으로 줘도 되고 그냥 space-around 써도 된다*/
+}
+.header-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.header-btn__icon {
+  display: block;
+  /* 사실 위 selector에서 역할 다해서 얘는 없어도 되긴 함 */
+}
+.header-btn__title {
+  margin-top: 20px;
+  font-size: 14px;
+}
+.header-btn__icon {
+  font-size: 12px;
+}
+.find__recommended {
+  margin-top: 30px;
+  padding-top: 15px;
+  border-top: 1px solid #f7f7f7;
+}
+.find__title {
+  font-size: 12px;
+  opacity: 0.7;
+  margin-bottom: 20px;
+}
+.find-friend {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/* 원래 가로로 정렬되어 있던 애들을 세로로 정렬해주고 싶을 때
+column! 쓰면 된다 row는 가로이고 column-reverse 등이 있다 */
+/* align-items, flex-direction, justify-content 등은 모두
+flex가 존재해야 적용이 되는 애들이다. 즉 먼저 flex가 있어야지
+쟤네가 사용이 된다는 것!! 그냥 align-items만 쓰면 center로
+정렬 안됨. 이걸 바로 밑에 있는 애한테 넣어봐도 flex가 없어서
+안 먹히는 걸 알 수 있다*/
+/* 즉 flex를 쓰고도 두 줄로 구분하는 방법은 써주고 column 쓰기 */
+/* 가운데 정렬하고플 때 써도 됨 */

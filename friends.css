@@ -1,0 +1,22 @@
+.friends__plus {
+  padding: 20px 0px;
+  border-top: 1px solid #f7f7f7;
+  border-bottom: 1px solid #f7f7f7;
+  margin: 20px 0px;
+}
+.friends__list .friends__title,
+.friends__plus .friends__title {
+  font-size: 14px;
+  opacity: 0.6;
+  margin-bottom: 12px;
+}
+
+/* 패딩이냐 마진이냐에 따라 top bottom 쓰고 싶은 거 쓸 수 있음 */
+/* 글자를 진하게 하는 건 어떻게 해야 하나 고민하고 있었는데 그냥
+font weight을 더 큰 숫자로 바꾸면 되는 거였음. 어떤 숫자로
+바꿀지는 구글서 폰트 다운할 때 링크에 나오니 그거 보고 바꾸기 */
+/* 카톡 음악 듣고 있는 건 초록색 박스로 둘러싸는 거도 아이콘을
+써야 하나 고민중이었는데 그냥 간단하게 div border를 초록색으로
+하고 radius 주면 되는 거였음 */
+/* 경계선 같은 거 넣는 것도 어려운 게 아니고 그냥 보더라인 픽셀
+주면 끝임 */

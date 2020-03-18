@@ -1,0 +1,30 @@
+.bigScreen {
+  position: absolute;
+  /* 부모 위치 기준이니까! boy 기준 */
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #fce006;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  color: white;
+  font-size: 28px;
+  text-align: center;
+  line-height: 1.5;
+  /* 이거는 줄 간격임 */
+  padding: 0px 20px;
+  display: none;
+  /* 이거 안 쓰면은 작게 해도 사라지지가 않는다 ㅋㅋㅋ 외우기*/
+  z-index: 4;
+  /* 확실하게 모든 것 위에 있게 하려고 */
+}
+@media screen and (min-width: 550px) {
+  /* 검사한 다음에 width보고 그냥 저걸로 씀 550 */
+  .bigScreen {
+    display: flex;
+    /* 위에 쓴 flex들하고 관계있는 듯..? 외우기 */
+  }
+}

@@ -1,0 +1,48 @@
+.more__btn-list,
+.more__suggestions-list {
+  margin: 30px 0px;
+  margin-left: 10px;
+  display: flex;
+  align-items: center;
+  /* 여기서 space-between하면 안 된다! 왜냐면 끝에 한 칸이 비워져 있으니까
+ */
+}
+.more__btn,
+.more__suggestion-suggestion {
+  margin-right: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+}
+.more__btn-title {
+  font-size: 14px;
+  margin-top: 15px;
+}
+.more__suggestions {
+  border-top: 1px solid #f7f7f7;
+  padding-top: 20px;
+}
+.more__title {
+  opacity: 0.8;
+  margin-bottom: 20px;
+}
+.suggestion__title {
+  font-size: 12px;
+  margin-top: 15px;
+}
+.suggestion__icon {
+  background-color: #fce006;
+  /* 여기다 왜 패딩 주는지 알아야지!!!!! 아이콘 만들기 */
+  padding: 10px;
+  border-radius: 10px;
+  /* 가운데 정렬하려고 flex 준 거긴 함 */
+  display: flex;
+  justify-content: center;
+  border-radius: 10px;
+}
+.suggestion__icon i {
+  font-size: 28px;
+  color: white;
+  /* 아이콘 자체를 바꾸고 싶을 때는 여기서 바꿔주기! */
+}

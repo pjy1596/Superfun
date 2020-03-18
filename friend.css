@@ -1,0 +1,86 @@
+.friend {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.friend__avatar {
+  width: 50px;
+  border-radius: 38%;
+  /* 이거 픽셀로 지정하면 사진의 크기가 바뀌기 때문에 퍼센트로 함 */
+}
+.friend__avatar.g-avatar {
+  width: 70px;
+}
+.friend__avatar.m-avatar {
+  width: 60px;
+}
+.friend__column {
+  display: flex;
+  align-items: center;
+}
+.friend__avatar {
+  margin-right: 15px;
+}
+.friend__name {
+  display: block;
+  font-weight: 600;
+  /* friends.css에 설명 참고 */
+  margin-bottom: 5px;
+}
+.friend__status,
+.friend__bottom-text,
+.chat__timestamp {
+  opacity: 0.6;
+}
+.friend__bottom-text {
+  font-size: 14px;
+}
+.friend__status,
+.chat__timestamp {
+  font-size: 12px;
+}
+.friend__now-listening {
+  padding: 5px 10px;
+  border-radius: 15px;
+  border: 2px solid #5aad77;
+  font-size: 14px;
+  /* 왜 여기서 opacity 안 주냐면 이게 border까지 같이 색깔이
+  흐려지게 만드니까... 글자만 흐려지게 하려면 그냥 글자색 바꾸기
+  또는 밑에다가 따로 class 만들고 opacity 주기 */
+  /* 글자 부분이랑 border랑 공간 있는 거 잘 보고 패딩 주기 */
+}
+.friend__now-listening span {
+  opacity: 0.7;
+}
+.friend__now-listening i {
+  font-size: 12px;
+}
+.friend__add-btn {
+  /* find.html에 있는 앤데 이름이 friend라서 여기로 옴 */
+  display: flex;
+  padding: 10px 15px;
+  border-radius: 5px;
+  justify-content: center;
+  align-items: center;
+  background-color: #f5f5f5;
+  /* 역시나 가운데 정렬하려고 아무것도 바뀌지 않겠지만 flex써주고
+  그 다음에 다른 애들 써줌 */
+}
+/* friend 애들을 한꺼번에 바꾸려고 저렇게 함 
+모든 friend class를 가지고 있는 div*/
+/* 항상 flex는 직계!!!에만 적용된다는 거 좀 기억하자
+한참 고민했다 정말! 직계가 하나면 하나마나 적용 안 됨*/
+/* 저 위에 세 개 d, j, a들은 한 줄에서 딱 맞게 정렬하려고
+세트처럼 나오는 애들이니 같이 써주면 됨 */
+/* timestamp와 content는 서로 다른 column 안에 있었으니까
+flex 써줘서 같은 라인에 있게 한 것이다
+그렇다면 과연 Jun I'm going home은 어떻게 사진의 옆으로
+보낼 것인가? -> flex */
+/* .friend__avatar.g-avatar은 저 두 class를 모두 가진
+element에 적용된다는 의미이고, .friend__avatar .g-avatar
+이거는 .friend__avatar 안에 속한 .g-avatar에게만 적용된다
+는 의미이다. 즉 띄어쓰기를 통해서 달라짐 */
+/* display: block 저거는 이름이랑 going home 다른 줄에 놓으려고 
+원래는 display inline으로 한 줄에 있으니까 바꾼 것/
+/* status와 bottom-text 저렇게 동시에 쓸 때는 줄 바꾸기
+chat에 있는 애만 글자 크기 */

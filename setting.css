@@ -1,0 +1,26 @@
+/* .settings {
+  border-top: 10px solid black;
+} */
+.settings__sections {
+  border-top: 1px solid #f7f7f7;
+  padding: 30px 0px;
+}
+.settings__icon {
+  font-size: 20px;
+  margin-left: 20px;
+  cursor: pointer;
+}
+.settings__title {
+  font-size: 22px;
+  font-weight: 300;
+  /* import에서 추가 */
+}
+.settings__setting {
+  margin-bottom: 30px;
+}
+.settings__setting:last-child {
+  margin-bottom: 0;
+  /* 마지막에 있는 애만 빼고 다 적용하게 만듦. 유용하다.
+  다른 child도 써보기 */
+}
+/* 디자인 찾을 때 dribble이나 pinterest서 "" url로 검색하면 됨 */

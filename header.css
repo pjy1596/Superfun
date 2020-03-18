@@ -1,0 +1,28 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+.header__title {
+  font-size: 24px;
+  font-weight: 600;
+}
+.header i {
+  font-size: 20px;
+  margin-left: 20px;
+  cursor: pointer;
+}
+.header__header-column {
+  display: flex;
+  align-items: center;
+}
+.header__back-btn {
+  font-size: 22px;
+  margin-right: 20px;
+}
+/* font weight 쓰거나 고칠 때는 원래 url에 있는 weight도 같이 고치기 */
+/* font weight 뜻은 그냥 글자 굵기임 */
+/* cursor 저거는 커서 갖다대면 클릭할 수 있게끔 커서 모양이 바뀌게 함 */
+/* chats div말고 span쓰니까 한 줄에 써진 이유 - div는 박스고
+span은 inline이니까 */
+/* align-items center 씀으로써 한 줄에 위아래 안 튀어나오고 정렬됨 */

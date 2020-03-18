@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600");
+@import "reset.css";
+@import "status-bar.css";
+@import "header.css";
+@import "nav-bar.css";
+@import "friend.css";
+@import "friends.css";
+@import "find.css";
+@import "more.css";
+@import "setting.css";
+@import "chat.css";
+@import "mobile.css";
+* {
+  box-sizing: border-box;
+  /* white-space: nowrap; */
+}
+
+body {
+  background-color: white;
+  padding: 10px 20px;
+  color: #1a1a1a;
+  font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  /* height: 10000px; 높이를 주면 화면 스크롤로 길게 내릴 수 있음*/
+  height: 1000px;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+main {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+/* 여기서 body가 selector 속에 있는 애들 다 property */
+/* open sans 우선적으로 글꼴 적용하고 만약 그게 없으면 apple system서 적용하고 그것도 없으면 blink~에서 적용하고 이런 식이다 */
+/* 얘는 하나의 큰 파일 만드는 것보다 작은 거 여러 개 만들고
+문제 생기면 바로바로 수정한 거 선호해서 이렇게 만듦 */
+/* 모든 링크 다 바꾸려고 그냥 a만 씀 */
+/* color inherit은 color를 father로 부터 받아라. 부모 색이 검정이면 얘도 다 검정 */
+/*  *쓰고 하면 모든 것에 다 적용된다 */
+/* 한 마디로 box 안에 패딩을 추가해도 box size가 바뀌지 않게 하는 것
+모든 요소에 기본적으로 적용하기! / 패딩을 넣으면
+글자를 쓸 공간이 줄어들게 된다. 이를 보완하기 위해 기본값으로
+박스가 줄어든 공간만큼 더 늘어나게 된다 */
+/* 즉 패딩 10 20이면 실제 박스크기는 110 320이 된다
+content가 들어있는 box를 밀어 버리게 된다 */
+/* border-box -> 패딩은 추가하지만 박스를 더 크게 만들지는 마라! */
+/* 즉 패딩 10 20이면 borderbox쓰면 실제 박스크기는 90 280이 된다 */
+/* 즉 일반적 상황에서는 width를 100%을 주고 패딩을 50을 주면
+100% + 좌우 50이 width가 됨 -> 그래서 크기가 커지는 바람에 아까
+...이 끝에 패딩에 가려진 형태가 되서 안 보이는 것 -> border-box*/
+/* 링크에 막 밑줄처럼 달린 그런 거 보기 싫어서 없애려고
+decoration: none으로 줌! */
+/* 보통 여러 import들을 styles.css라는 곳에 한 번에 저장하고
+원래 문서에서는 link 태그 한 번 써서 다 불러오는 방식 씀
+ */

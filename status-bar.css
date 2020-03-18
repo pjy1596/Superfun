@@ -1,0 +1,21 @@
+.status-bar {
+  /* position: fixed; */
+  /* width: 100%; */
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  opacity: 0.7;
+}
+.status-bar i {
+  font: size 14px;
+}
+.status-bar__battery-level {
+  margin-left: 10px;
+}
+
+/* space-between으로 떨어뜨려놈 */
+/* status-bar가 class라서 .붙이고 나온 것 */
+/* id였다면 #붙였을 것 */
+/* google fonts 쓰기, customize 등 */
+/* 글자 너무 진하다고 70%만 색 적용되는 opacity */
+/* 저 i는 status-bar 밑에 있는 모든 icon들 다 말함, span 뺴고, i라고 차피 써져 있음 */
