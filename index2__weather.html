@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="file:///C:/Users/park/Downloads/bootstrap.min.css"
+    />
+    <!-- bootswatch에서 괜찮은 양식 다운 -->
+    <title>WeatherJS2</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 mx-auto text-center bg-primary mt-5 p-5 rounded">
+          <h1 id="w-location"></h1>
+          <!-- 위치 -->
+          <h3 class="text-dark" id="w-desc"></h3>
+          <!-- description -->
+          <h3 id="w-string"></h3>
+          <!-- temperature -->
+          <img id="w-icon" />
+          <ul id="w-details" class="list-group mt-3">
+            <li class="list-group-item" id="w-humidity"></li>
+            <li class="list-group-item" id="w-sea"></li>
+            <li class="list-group-item" id="w-feels-like"></li>
+            <li class="list-group-item" id="w-wind"></li>
+          </ul>
+          <hr />
+          <button
+            type="button"
+            class="btn btn-primary"
+            data-toggle="modal"
+            data-target="#locModal"
+          >
+            <!-- bootstrap 사이트에서 modal 관련 내용 코드 그대로 따옴 -->
+            Change Location
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- 이 밑에 꺼도 싸이트에서 그대로 가져온 것, 그러나 id는 위에 꺼에 data-target에 맞게 똑같이 locModal로 해주고 비슷하게 다른 id랑 labelled by
+        같은 것도 loc 넣어서 절절하게 바꿔줌 -->
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="locModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="locModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="locModalLabel">Choose Location</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <!-- 이 밑에 이제 본격적으로 넣고 싶은 거 넣기 -->
+            <form id="w-form">
+              <div class="form-group">
+                <label for="city">City</label>
+                <input type="text" id="city" class="form-control" />
+              </div>
+              <div class="form-group">
+                <label for="country">Country</label>
+                <input type="text" id="country" class="form-control" />
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+            >
+              Close
+            </button>
+            <button id="w-change-btn" type="button" class="btn btn-primary">
+              <!-- 여기도 id 추가해줬다 -->
+              Save changes
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+      crossorigin="anonymous"
+    ></script>
+    <!-- bootstrap 홈페이지서 js용 다운 -->
+    <!-- css는 문서 위에 링크 놓고 js는 문서 밑에 script로 놈 -->
+    <!-- 밑에 저것들 순서로도 엄청나게 오류 떴음 -->
+    <script src="storage2__weather.js"></script>
+    <script src="weather2__weather.js"></script>
+    <script src="UI2__weather.js"></script>
+    <script src="app2__weather.js"></script>
+  </body>
+</html>
